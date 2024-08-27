@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    android:padding="30dp"
+    tools:context=".MainActivity2">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img1"
+        android:layout_width="100dp"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="251dp"
+        android:src="@drawable/hadi1" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/img1"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/hadi2" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img3"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_below="@id/img2"
+        android:layout_alignStart="@+id/img1"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="62dp"
+        android:layout_toStartOf="@+id/img2"
+        android:src="@drawable/hadi3" />
+
+    <TextView
+        android:id="@+id/tex1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Easy discovering new place and share"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_below="@+id/img3"
+        />
+
+    <TextView
+        android:id="@+id/tex2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tex1"
+        android:layout_alignStart="@+id/tex1"
+        android:layout_alignEnd="@+id/tex1"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="0dp"
+        android:text="these between your frinds"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tex2"
+        android:layout_alignStart="@+id/tex2"
+        android:layout_alignEnd="@+id/tex2"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="-429dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal">
+
+        <com.hbb20.CountryCodePicker
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your phon number"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
